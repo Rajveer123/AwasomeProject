@@ -19,6 +19,8 @@ import {
 } from 'react-native';
 import Header from './src/components/Header';
 import ListPageProfilePannel from './src/components/ListPageProfilePannel';
+import { bannerImage } from './src/images';
+import Footer from './src/components/Footer';
 const App: () => React$Node = () => {
   return (
     <>
@@ -29,6 +31,10 @@ const App: () => React$Node = () => {
           <View style={styles.body}>
           <Header />
           <ListPageProfilePannel />
+          <View style={styles.imageContainer}>
+          <Image source={bannerImage} style={styles.bannerImg}></Image>
+          </View>
+          <Footer />
           </View>
         </ScrollView>
     </>
@@ -43,11 +49,17 @@ const styles = StyleSheet.create({
     backgroundColor: '#051F4C',
     paddingTop: (Platform.OS === 'ios') ? 20 : 0,
     flex :1,
-  }/*,
-  engine: {
-    position: 'absolute',
-    right: 0,
   },
+  imageContainer: {
+    width: '100%',
+    height: 600
+  },
+  bannerImg: {
+    flex: 1,
+     height: null,
+     resizeMode: 'contain',
+     width: null,
+  }/*,
   sectionDescription: {
     marginTop: 8,
     fontSize: 18,
