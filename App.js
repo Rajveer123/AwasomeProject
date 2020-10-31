@@ -18,6 +18,7 @@ import {
   Image
 } from 'react-native';
 import Header from './src/components/Header';
+import ListPageProfilePannel from './src/components/ListPageProfilePannel';
 const App: () => React$Node = () => {
   return (
     <>
@@ -27,9 +28,7 @@ const App: () => React$Node = () => {
           style={styles.scrollView}>
           <View style={styles.body}>
           <Header />
-            <View style={styles.profileViewContainer}>
-
-            </View>
+          <ListPageProfilePannel />
           </View>
         </ScrollView>
     </>

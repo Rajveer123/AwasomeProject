@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
         alignItems: "center",
     },
     bellIcon: {
-        marginLeft: 15,
+        marginLeft: 25,
     },
     addIconContainer: {
         flexDirection: 'row',
