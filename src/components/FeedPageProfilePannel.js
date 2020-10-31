@@ -26,11 +26,11 @@ const FeedPageProfilePannel: () => React$Node = () => {
                     <Text style={styles.secondText}>Posts</Text>
                     </View>
                     <View style={styles.singleView}>
-                        <Text style={styles.topText}>1</Text>
+                        <Text style={styles.topText}>2</Text>
                         <Text style={styles.secondText}>Followers</Text>
                     </View>
                     <View style={styles.singleView}>
-                        <Text style={styles.topText}>2</Text>
+                        <Text style={styles.topText}>1</Text>
                         <Text style={styles.secondText}>Following</Text>
                     </View>
                 </View>
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
         flex: 1,
         marginTop: 20,
         paddingHorizontal: 0,
-        height: 90,
+        height: 95,
         justifyContent: "flex-start",
         flexDirection: 'row',
     },
@@ -99,7 +99,7 @@ const styles = StyleSheet.create({
     },
     secondText: {
     color: 'white',
-    fontSize: 14,
+    fontSize: 12,
     fontWeight: '600',
     justifyContent: 'flex-end',
     alignItems: 'flex-end',
