@@ -21,6 +21,7 @@ import Header from './src/components/Header';
 import ListPageProfilePannel from './src/components/ListPageProfilePannel';
 import { bannerImage } from './src/images';
 import Footer from './src/components/Footer';
+import FooterTextView from './src/components/FooterTextView';
 const App: () => React$Node = () => {
   return (
     <>
@@ -34,6 +35,7 @@ const App: () => React$Node = () => {
           <View style={styles.imageContainer}>
           <Image source={bannerImage} style={styles.bannerImg}></Image>
           </View>
+          <FooterTextView />
           <Footer />
           </View>
         </ScrollView>
