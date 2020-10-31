@@ -22,7 +22,8 @@ const styles = StyleSheet.create({
     footerContainer: {
         justifyContent: "space-evenly",
         flexDirection: 'row',
-        alignItems:'center'
+        alignItems:'center',
+        marginBottom:10
     },
 });
 export default Footer;

@@ -35,14 +35,12 @@ const styles = StyleSheet.create({
         marginTop:10,
         color: 'white',
         fontSize: 12,
-        //fontWeight: '200',
         textAlign: 'left',
     },
     viewAllText: {
         marginTop: 5,
         color: 'white',
         fontSize: 14,
-        //fontWeight: '300',
         textAlign: 'left',
     }
 });

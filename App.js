@@ -12,9 +12,7 @@ import {
   StyleSheet,
   ScrollView,
   View,
-  Text,
   StatusBar,
-  Platform,
   Image
 } from 'react-native';
 import Header from './src/components/Header';
@@ -49,7 +47,7 @@ const styles = StyleSheet.create({
   },
   body: {
     backgroundColor: '#051F4C',
-    paddingTop: (Platform.OS === 'ios') ? 20 : 0,
+    paddingTop: 20,
     flex :1,
   },
   imageContainer: {
@@ -61,23 +59,6 @@ const styles = StyleSheet.create({
      height: null,
      resizeMode: 'contain',
      width: null,
-  }/*,
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-    //color: Colors.dark,
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-  footer: {
-    //color: Colors.dark,
-    fontSize: 12,
-    fontWeight: '600',
-    padding: 4,
-    paddingRight: 12,
-    textAlign: 'right',
-  },*/
+  }
 });
 export default App;
