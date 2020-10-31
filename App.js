@@ -25,6 +25,7 @@ import Footer from './src/components/Footer';
 import FooterTextView from './src/components/FooterTextView'; */}
 
 import FeedScreenHeader from './src/components/FeedScreenHeader';
+import FeedPageProfilePannel from './src/components/FeedPageProfilePannel';
 const App: () => React$Node = () => {
   return (
     <>
@@ -44,6 +45,7 @@ const App: () => React$Node = () => {
 
           {/* Second Screen Code */}
           <FeedScreenHeader />
+          <FeedPageProfilePannel />
           </View>
         </ScrollView>
     </>

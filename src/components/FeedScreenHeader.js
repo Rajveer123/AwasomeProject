@@ -5,7 +5,7 @@ import {
     Text,
     Image
 } from 'react-native';
-import { bell, logo, add, message } from '../images';
+import { settings, video, add } from '../images';
 const FeedScreenHeader: () => React$Node = () => {
     return (
 
@@ -17,8 +17,8 @@ const FeedScreenHeader: () => React$Node = () => {
                 <Text style={styles.headerText}>Profile</Text>
             </View>
             <View style={styles.settingIconContainer}>
-                <Image source={message} style={styles.rightIcons}></Image>
-                <Image source={add} style={styles.rightIcons}></Image>
+                <Image source={video} style={styles.rightIcons}></Image>
+                <Image source={settings} style={styles.rightIcons}></Image>
             </View>
         </View>
 
@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
         flex: 1,
         marginTop: 0,
         paddingHorizontal: 0,
-        height: 60,
+        height: 40,
         justifyContent: "flex-start",
         flexDirection: 'row',
     },
@@ -41,7 +41,6 @@ const styles = StyleSheet.create({
     addIcon: {
         marginLeft: 15,
     },
-   
     headerView: {
     flex: 1,
     flexDirection: "row",
@@ -50,7 +49,7 @@ const styles = StyleSheet.create({
 },
     headerText: {
     fontSize: 22,
-    fontWeight: '600',
+    fontWeight: '400',
     color: 'white',
 },
     settingIconContainer: {

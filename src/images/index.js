@@ -11,4 +11,4 @@ export const wifi = require('./wifi.png');
 export const mic = require('./mic.png');
 export const user = require('./user.png');
 export const video = require('./video.png');
-export const settings = require('./settings.png')
+export const settings = require('./settings.png');
