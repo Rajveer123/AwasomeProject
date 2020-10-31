@@ -13,13 +13,18 @@ import {
   ScrollView,
   View,
   StatusBar,
+  Platform,
   Image
 } from 'react-native';
+{/*
+  Note : Uncomment below Code For Seeing UI of First App
 import Header from './src/components/Header';
 import ListPageProfilePannel from './src/components/ListPageProfilePannel';
 import { bannerImage } from './src/images';
 import Footer from './src/components/Footer';
-import FooterTextView from './src/components/FooterTextView';
+import FooterTextView from './src/components/FooterTextView'; */}
+
+import FeedScreenHeader from './src/components/FeedScreenHeader';
 const App: () => React$Node = () => {
   return (
     <>
@@ -28,13 +33,17 @@ const App: () => React$Node = () => {
           contentInsetAdjustmentBehavior="automatic"
           style={styles.scrollView}>
           <View style={styles.body}>
-          <Header />
+          {/* First Screen Code */}
+          {/* <Header />
           <ListPageProfilePannel />
           <View style={styles.imageContainer}>
           <Image source={bannerImage} style={styles.bannerImg}></Image>
           </View>
           <FooterTextView />
-          <Footer />
+          <Footer /> */}
+
+          {/* Second Screen Code */}
+          <FeedScreenHeader />
           </View>
         </ScrollView>
     </>
@@ -47,7 +56,7 @@ const styles = StyleSheet.create({
   },
   body: {
     backgroundColor: '#051F4C',
-    paddingTop: 20,
+    paddingTop: Platform.OS == 'ios' ? 10 : 20,
     flex :1,
   },
   imageContainer: {
